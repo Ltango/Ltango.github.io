@@ -13,37 +13,32 @@
         </p>
 			<ul>
 			  <li>
-				 <b>Deep learning</b>. It's an exciting time for machine learning. I'm working through several online classes, and swap articles with collegues.
+				 <b>Everything electronic</b>. I was always the kid setting up servers to play games on, fixing hardware back to the Nintendo 64 with paint spilled all over it, and writing code for rasberry pi projects.  I love computers and everything about them, the freedom to do whatever you want virtually is a lifetime of experiences to be had.
 			  </li>
 			  <li>
-				  <b>RC Planes and Boats</b>. I've been an enthusiastic hobbiest since I was a teenager - but only as an adult am I able to afford the higher-quality
-          devices. I like to modify existing kits to improve speed, and add instrumentation.
+				  <b>Snowboarding</b>. I have been able to ski for as long as I can remember, and took the transition into snowboarding about seven years ago.  The thrill and freedom of flying down a mountain of fresh powder is second to none.
 			  </li>
 			  <li>
-				  <b>Mountaineering</b>. I live in the Pacific Northwest, home of some of the greatest mountains and trails in the country. I enjoy spending weekends
-          on scrambles and getting lost in the woods.
-      </li>
+				  <b>Firearms</b>. I was brought up in a military background, I found a passion in exploring everything dangerous.  By far my favorite stress reliever is a trip to the shooting range, if only gunpowder was a little bit cheaper you would catch me a the range every weekend.
+			  </li>
+	  		  <li>
+				  <b>Football</b>. You can always catch me watching NFL on Thursday, Sunday, and Monday and hosting superbowl parties.  I'm a huge fan of the sport despite its rigourous physical and mental toll.
+			  </li>
 			</ul>
 		</div>
     <div class="col-sm-6">
       <h3 style="margin-top:0">Recent Projects</h3>
 		  <ul>
   			<li>
-          OpenGidget is an open-source fork of Raspbian Linux that makes it easier to auto-provision a headless Raspberry PI,
-          get it onto your WiFi network, and deploy simple Python and Ruby scripts that run at startup - all without needing to plug in a keyboard/monitor.
-    		</li>
+          Currently in development, the cyber network capture generator is my senior design project.  This will be an open sourced and free solution to a virtual network that records and returns all PCAP data.  All logic will be written in Python, with a front end web application that will allow a user to launch, save, and load scenarios.  Important software used will be Xen, Chef, and Selenium.  Xen will be the hypervisor solution, Chef will be our cookbook automation solution, and Selenium will be used to develop automation scripts to generate randomized but realistic user traffic.  The security research aspects to this are infinite as any malware can be introduced into the system for study.      		</li>
   			<li>
-          My Medium blog covers my ongoing attempts to instrument and automate everything in my house.
+          During my internship doing IT security I developed a Slack application to help centralize the control of our network with the tools that we had.  This included using the Sentinel One and Jira API so that calls could be made to control our network through Sentinel One.  Jira was our companies IT ticket solution, so any problems came to our team in the form of a ticket, with this application I was able to automatically upload Jira tickets to Slack that would be displayed and allow user interaction to easily close tickets – sometimes with the click of a button that would automatically resolve the issue and respond to the customer.  Sometimes additional issues would require information on the user and the machines they used, without leaving slack the user would be able to find all that information through calls to the Sentinel One API through slack.  All logic and server handling were written in Python.  To prevent abuse of the system I had my own security solutions so that only privileged users were able to use the application, as well as automatic API token renewing options.
   			</li>
-  		    </ul>
-  		    <h3>Other Things</h3>
+			<li>
+		  Another application I helped develop at my internship doing IT security was a script that ran 24/7.  Several thousand suspicious applications would be flagged by one of the companies security solutions Sentinel One.  I wrote a script that would take those threats, look up their file hash in Virus Total or submit a request to review the file hash.  The Virus Total API would then return a value of how dangerous the application was, and anything above a certain threshold the script would make calls to the Sentinel One API to automatically kill, quarantine, and resolve the threat.  The file hash would then be recorded to automatically resolve the threat the same way in the future to minimize calls to the VirusTotal API.  Another aspect of this script would be to automatically check all embedded URLs in our Jira ticket system.  Using selenium to find final URL redirects, that URL would then be uploaded to VirusTotal for review for their API.  The score would be returned, and all of this information would be written as an internal comment in Jira.  If scores were above a certain threshold then it would be blocked network wide by mimecast, and through DNS lookups.  This proved to be extremely effective as I would be closing 100 tickets to other team members 50 tickets every week despite working half the hours.  There was automatic error handling so that any errors would be recorded and I could review them individually while the script ignores the ticket and continues running.  Built in logging would keep records on the server for about a month.  
+  		    </li>
+			</ul>
   		    <ul>
-  			<li>
-           Volunteer at Boys and Girls club (since 2008)
-  			</li>
-  			<li>
-  			  Active member of The Seattle Ruby on Rails Developers Meetup Group.
-  			</li>
 		   </ul>
       </div>
     </div>
