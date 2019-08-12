@@ -13,13 +13,16 @@
         </p>
 			<ul>
 			  <li>
-				 <b>Everything electronic</b>. I was always the kid setting up servers to play games on, fixing hardware back to the Nintendo 64 with paint spilled all over it, and writing code for rasberry pi projects.  I love computers and everything about them, the freedom to do whatever you want virtually is a lifetime of experiences to be had.
+				 <b>Everything electronic</b>. I have disassembled and repaired nearly every game console in existence, I've repaired complex televisions, smart phones, desktops, laptops and simple things like soldering LED light strips.  I'm hands on and learn the best when I'm doing and taking risks.  I build my own gaming machines and help others research and build theres.  I love raspberry pi projects and simulation coding projects with a new found interest in machine learning.
 			  </li>
 			  <li>
-				  <b>Snowboarding</b>. I have been able to ski for as long as I can remember, and took the transition into snowboarding about seven years ago.  The thrill and freedom of flying down a mountain of fresh powder is second to none.
+				  <b>Snowboarding</b>. I have been able to ski for as long as I can remember, and took the transition into snowboarding in High School.  The thrill and freedom of flying down a mountain of fresh powder is second to none.
 			  </li>
 			  <li>
-				  <b>Firearms</b>. I was brought up in a military background, I found a passion in exploring everything dangerous.  By far my favorite stress reliever is a trip to the shooting range, if only gunpowder was a little bit cheaper you would catch me a the range every weekend.
+				  <b>Firearms</b>. I was brought up in a military background, I found a passion in exploring everything dangerous.  By far my favorite stress reliever is a trip to the shooting range, if gunpowder was a little bit cheaper you would catch me a the range every weekend.  I was of course brought up in the rigourous and strict training in saftey and responsibility and apply that to all of my adrenaline seeking habits.
+			  </li>
+			  <li>
+				  <b>Motorcycles</b>. I bought a 2007 Suzuki SV650 when I was 22 and fell in love with it from the first test drive.  I do all my own maintenece, repair, and modifications on the bike.  My only regret is that I can't ride year round with the winter weather.
 			  </li>
 	  		  <li>
 				  <b>Football</b>. You can always catch me watching NFL on Thursday, Sunday, and Monday and hosting superbowl parties.  I'm a huge fan of the sport despite its rigourous physical and mental toll.
@@ -30,7 +33,8 @@
       <h3 style="margin-top:0">Recent Projects</h3>
 		  <ul>
   			<li>
-          Currently in development, the cyber network capture generator is my senior design project.  This will be an open sourced and free solution to a virtual network that records and returns all PCAP data.  All logic will be written in Python, with a front end web application that will allow a user to launch, save, and load scenarios.  Important software used will be Xen, Chef, and Selenium.  Xen will be the hypervisor solution, Chef will be our cookbook automation solution, and Selenium will be used to develop automation scripts to generate randomized but realistic user traffic.  The security research aspects to this are infinite as any malware can be introduced into the system for study.      		</li>
+          The cyber network capture generator was my senior design project at Iowa State.  This project was under the constraints of utilizing free and open-sourced software.  There are three major components, the network generator, the network capture, and the web application.  The workflow begins with the push of a button - set up a scenario with 2 virtual machines routed through a machine hosting pfsense to the outside web.  I was responsible for creating scripts that generate traffic utilizing a selenium web crawler, SSH between machines on the network, portscans, and remote execution of code.  All of this traffic is recorded in the network and sent to the web application for furhter investigation after the scenario has finished.  The security research aspects to this are infinite as any malware can be introduced into the system safely for further study.
+		  </li>
   			<li>
           During my internship doing IT security I developed a Slack application to help centralize the control of our network with the tools that we had.  This included using the Sentinel One and Jira API so that calls could be made to control our network through Sentinel One.  Jira was our companies IT ticket solution, so any problems came to our team in the form of a ticket, with this application I was able to automatically upload Jira tickets to Slack that would be displayed and allow user interaction to easily close tickets – sometimes with the click of a button that would automatically resolve the issue and respond to the customer.  Sometimes additional issues would require information on the user and the machines they used, without leaving slack the user would be able to find all that information through calls to the Sentinel One API through slack.  All logic and server handling were written in Python.  To prevent abuse of the system I had my own security solutions so that only privileged users were able to use the application, as well as automatic API token renewing options.
   			</li>
